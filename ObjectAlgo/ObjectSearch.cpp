@@ -12,6 +12,9 @@ using std::endl;
 using std::cerr;
 #include <string>
 using std::string;
+#include <iostream>
+#include <cstring>
+#include <algorithm>
 
 /// Now we are going to search for an array of objects
 /// Linear and bineary search can also ne used for specific element in an array of objects or structure
@@ -80,6 +83,8 @@ int main(){
         // get the item search for
         cout << "\nEnter the items code: ";
         cin >> desiredCode;
+std::transform(desiredCode.begin(), desiredCode.end(),desiredCode.begin(), ::toupper);
+        
         
         // search for the object
         
@@ -90,13 +95,13 @@ int main(){
             cerr << "The item is not in the list!....." << endl;
         }else{
             // The item was found here
-            cout << "\nThe item with code " << elements[pos].getItemCode() << " costs €" << elements[pos].getPrice()
+            cout << "\nThe item with code " << elements[pos].getCode() << " costs €" << elements[pos].getPrice()<<
             " Euros and the description of the item is: " << elements[pos].getDescription() << endl;
         }
         // Does the uses want to look up for another price
         cout << "\nLook up another item price(Y/N) ";
         cin >> selection;
-    } while (selection != 'Y' && selection != 'y');
+    } while (selection != 'N' && selection != 'n');
     
     
     cout << "\nDone:.....!"<<endl;
