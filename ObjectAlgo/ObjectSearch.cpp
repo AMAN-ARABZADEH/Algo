@@ -83,7 +83,7 @@ int main(){
         // get the item search for
         cout << "\nEnter the items code: ";
         cin >> desiredCode;
-std::transform(desiredCode.begin(), desiredCode.end(),desiredCode.begin(), ::toupper);
+        std::transform(desiredCode.begin(), desiredCode.end(),desiredCode.begin(), ::toupper);
         
         
         // search for the object
