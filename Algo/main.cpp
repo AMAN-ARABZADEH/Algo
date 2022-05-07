@@ -22,15 +22,29 @@ using std::string;
 
 
  const unsigned int SIZE = 5;
+
 // Function Prototypes
-// Linear search
+// Linear Search is okej for small application search but not efficient for large list element.
+// We code some more efficient way of finding element later.
+
+// This is linear search algorithm
+// Linear search is simple algorithem, it is also famous for sequential algorithm search.
+// It uses a loop to sequentially step through an array, starting with the first element.
+// It compares each element with the value being searched for, and stops when either,
+// the value is found or the end of the list is encountered.
+
 int searchList(int [], int, int);   // arr, size, target
+
 // Binary search for sorted lists
+// Binary search is clever algorithem that is much more efficent than the linnear search
+// instead of starting at arrays first element, the algorithm starts at middle element.
+// If that element happens to contain the desired target, then the search is done. Else,
+// the value in the middle is either greater och less than the target being searched for.
+// This program will perform a binary search on an integer
+// The algorithem uses index variable first, last, and middle.
+// Array whos elements are in ascending order.
 
-int binarySearch(int [], int, int);
-
-
-
+int binarySearch(int [], int, int);  // arr, size, target
 
 
 
@@ -46,20 +60,15 @@ int main(){
         cout << "Target was found at " << (results) << endl;
     }
 
-    
-    
-    // This program will perform a binary search on an integer
-    // Array whos elements are in ascending order.
+
     
     // Creating arry of Id numbbers
     int biTest[11] = {11,22,33,44,55,66,172,676,1700, 7999, 17000};
     int testResults{};
     int idEmp{};
-    
     // Ask for ID
     cout << "Enter the employee ID you wish to search for: ";
     cin >> idEmp;
-    
     // searching for ID
     testResults = binarySearch(biTest,11, idEmp);
     if(testResults != -1){
@@ -67,7 +76,6 @@ int main(){
     }else{
         cout << "Target was not found "  << endl;
     }
-
     return 0;
 }
 
