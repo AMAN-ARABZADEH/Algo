@@ -28,6 +28,7 @@
 		4A040C5D2826917400F082D7 /* ObjectAlgo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ObjectAlgo; sourceTree = "<group>"; };
 		4A040C5E2826C51300F082D7 /* sortingAlgo */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sortingAlgo; sourceTree = "<group>"; };
 		4A040C5F282919AA00F082D7 /* DFS */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DFS; sourceTree = "<group>"; };
+		4A040C60282A98B400F082D7 /* BaseConverter */ = {isa = PBXFileReference; lastKnownFileType = folder; path = BaseConverter; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +45,7 @@
 		4A040C482826823700F082D7 = {
 			isa = PBXGroup;
 			children = (
+				4A040C60282A98B400F082D7 /* BaseConverter */,
 				4A040C5F282919AA00F082D7 /* DFS */,
 				4A040C5E2826C51300F082D7 /* sortingAlgo */,
 				4A040C5D2826917400F082D7 /* ObjectAlgo */,
